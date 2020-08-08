@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+<script src="angular.min.js" charset="utf-8"></script>
+<script src="app.js" charset="utf-8"></script>
+
+  </head>
+  <body ng-app="myapp">
+ <div ng-controller="toBuy as list" style="float:left;width:40%;">
+    <h2>To&nbsp Buy &nbsp List</h1><br>
+<ol>
+  <li ng-repeat="item in list.obj">Buy&nbsp{{item.quantity}}&nbsp of&nbsp{{item.name}}&nbsp<button ng-click="list.bought($index);">Bought</button></li>
+</ol>
+<div class="" ng-show="list.info.message">{{list.info.message}}
+
+</div>
+</div>
+
+
+<div class="" ng-controller="bought as list" style="float:left;width:40%;">
+  <h2>Aldready &nbsp Bought</h2>
+<ol>
+<li ng-repeat="item in list.obj2">Bought&nbsp{{item.quantity}}&nbsp of&nbsp{{item.name}}</li>
+</ol>
+
+<span ng-show="list.info.message2">{{list.info.message2}}</span>
+</div>
+
+  </body>
+</html>
