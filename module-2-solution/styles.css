@@ -1,0 +1,43 @@
+h1{text-align: center;
+  font-size:3em;}
+
+  *{box-sizing:border-box}
+
+  div.child{float:left;border:2px solid black;
+    background-color:orange;
+
+    margin-left:70px;
+    margin-bottom:30px;
+  padding:20px;
+font-family:Arial sans-serif;
+
+
+}
+
+@media (min-width:992px){
+.col-lg-3{width:25%;}
+}
+
+
+@media(min-width:768px) and (max-width:991px){
+.col-md-4{width:40%}
+.col-md-12{width:100%}
+
+}
+
+
+@media(max-width:767px){
+
+  .col-sm-12{width:100%}
+}
+span{float:right;
+  position:relative;
+top:-15px;
+right:-15px;
+font-size:2.25em;
+background-color:red;
+border:2px solid black;
+}
+
+
+div.clear{clear:both;}
